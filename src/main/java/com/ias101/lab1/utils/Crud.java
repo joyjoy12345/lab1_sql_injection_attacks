@@ -35,6 +35,7 @@ public class Crud {
             while(rs.next()) {
                 users.add(extractUserFromResultSet(rs));
             }
+
             rs.close();
             return users;
         } catch (SQLException e) {
